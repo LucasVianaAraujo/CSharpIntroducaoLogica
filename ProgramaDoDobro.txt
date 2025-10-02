@@ -1,0 +1,22 @@
+using System.Text.RegularExpressions;
+
+namespace csharp;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("-- PROGRAMA DO DOBRO --");
+
+        Console.WriteLine("Informe um número:");
+        string ValorInicial = Console.ReadLine();
+
+        ValorInicial = ValorInicial.Replace(".", ",");
+
+        double ValorInicialConvertido = Convert.ToDouble(ValorInicial);
+
+        double Resultado = ValorInicialConvertido * 2;
+
+        Console.WriteLine($"O dobro de {ValorInicial} é {Resultado}!");
+    }
+}

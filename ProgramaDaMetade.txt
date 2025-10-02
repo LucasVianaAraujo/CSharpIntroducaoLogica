@@ -1,0 +1,20 @@
+namespace csharp;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("-- PROGRAMA DA METADE --");
+
+        Console.WriteLine("Informe um número:");
+        string ValorInicial = Console.ReadLine();
+
+        ValorInicial = ValorInicial.Replace(".", ",");
+
+        double ValorInicialConvertido = Convert.ToDouble(ValorInicial);
+
+        double Resultado = ValorInicialConvertido / 2;
+
+        Console.WriteLine($"A metade de {ValorInicial} é {Resultado}!");
+    }
+}

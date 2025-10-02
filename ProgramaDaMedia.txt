@@ -1,0 +1,30 @@
+namespace csharp;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("-- PROGRAMA DA MÉDIA --");
+
+        Console.WriteLine("Informe a primeira nota:");
+        string nota1 = Console.ReadLine();
+
+        Console.WriteLine("Informe a segunda nota:");
+        string nota2 = Console.ReadLine();
+
+        Console.WriteLine("Informe a terceira nota:");
+        string nota3 = Console.ReadLine();
+
+        nota1 = nota1.Replace(".", ",");
+        nota2 = nota2.Replace(".", ",");
+        nota3 = nota3.Replace(".", ",");
+
+        double NotaConvertida1 = Convert.ToDouble(nota1);
+        double NotaConvertida2 = Convert.ToDouble(nota2);
+        double NotaConvertida3 = Convert.ToDouble(nota3);
+
+        double ResultadoMedia = (NotaConvertida1 + NotaConvertida2 + NotaConvertida3) / 3;
+
+        Console.WriteLine($"A média de notas é {ResultadoMedia}!");
+    }
+}
